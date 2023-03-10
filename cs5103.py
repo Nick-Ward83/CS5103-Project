@@ -13,11 +13,11 @@ def BigNumberComputation(a,op, b):
   if "+" in op:
     result=a+b
     decResult=decimal.Decimal(result)
-    print(format(decResult, '.3e'))
+    print("A+B= " + format(decResult, '.3e'))
   elif (op=="-"):
     result=b-a
     decResult=decimal.Decimal(result)
-    print(format(decResult, '.3e'))
+    print("A+B= " + format(decResult, '.3e'))
   else:
     print("Operand Not Allowed")
 
