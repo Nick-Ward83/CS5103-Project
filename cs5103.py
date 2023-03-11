@@ -14,30 +14,13 @@ def BigNumberComputation(a,op, b):
     result=a+b
     decResult=decimal.Decimal(result)
     print("A+B= " + format(decResult, '.3e'))
+    return decResult
   elif (op=="-"):
     result=b-a
     decResult=decimal.Decimal(result)
     print("A+B= " + format(decResult, '.3e'))
+    return decResult  
   else:
+    result=0
     print("Operand Not Allowed")
-
-def testCase1 ():
-  a=7*(10**1186)
-  b=16*(10**1187)
-  op="+"
-  result=BigNumberComputation(a, op, b)
-testCase1()
-
-def testCase2 ():
-  a=7*(10**1186)
-  b=16*(10**1187)
-  op="-"
-  result=BigNumberComputation(a, op, b)
-testCase2()
-
-def testCase3(): #Should return "Operand Not Allowed"
-  a=7*10e1123
-  b=16*10e1187
-  op="/"
-  result=BigNumberComputation(a, op, b)
-testCase3()
+    return result
