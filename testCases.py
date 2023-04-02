@@ -1,4 +1,4 @@
-from cs5103 import BigNumberComputation
+from cs5103 import BigNumberComputation, stringNumber
 import decimal 
 def testCase1 ():
   a=7*(10**1186)
@@ -36,3 +36,17 @@ def testCase3(): #Should return "Operand Not Allowed"
   else:
     print ("Test Case 3 Failed")
 testCase3()
+
+def testCase4(): #Return commas
+  a=7*(10**1186)
+  b=16*(10**1187)
+  op="+"
+  result=BigNumberComputation(a, op, b)
+  strResult=stringNumber(result)
+  print(strResult)
+  if ',' in strResult:
+    print ("Test Case 3 Passed")
+  else:
+    print ("Test Case 3 Failed")
+
+testCase4()

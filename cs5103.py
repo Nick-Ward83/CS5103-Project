@@ -24,3 +24,5 @@ def BigNumberComputation(a,op, b):
     result=0
     print("Operand Not Allowed")
     return result
+def stringNumber(x):
+  print("{:,}".format(x))
