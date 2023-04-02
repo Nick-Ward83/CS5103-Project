@@ -14,15 +14,19 @@ def BigNumberComputation(a,op, b):
     result=a+b
     decResult=decimal.Decimal(result)
     print("A+B= " + format(decResult, '.3e'))
+    strResult=stringNumber(decResult)
+    print(strResult)
     return decResult
   elif (op=="-"):
     result=b-a
     decResult=decimal.Decimal(result)
     print("A+B= " + format(decResult, '.3e'))
+    strResult=stringNumber(decResult)
+    print(strResult)
     return decResult  
   else:
     result=0
     print("Operand Not Allowed")
     return result
 def stringNumber(x):
-  print("{:,}".format(x))
+  return("{:,}".format(x))

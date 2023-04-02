@@ -43,7 +43,6 @@ def testCase4(): #Return commas
   op="+"
   result=BigNumberComputation(a, op, b)
   strResult=stringNumber(result)
-  print(strResult)
   if ',' in strResult:
     print ("Test Case 3 Passed")
   else:
