@@ -44,8 +44,22 @@ def testCase4(): #Return commas
   result=BigNumberComputation(a, op, b)
   strResult=stringNumber(result)
   if ',' in strResult:
-    print ("Test Case 3 Passed")
+    print ("Test Case 4 Passed")
   else:
-    print ("Test Case 3 Failed")
-
+    print ("Test Case 4 Failed")
 testCase4()
+
+def testCase5(): #test with decimals
+  a=decimal.Decimal(7*(10**1186))
+  fraction1=decimal.Decimal(0.3)
+  Anumber=a+fraction1
+  b=decimal.Decimal(16*(10**1187))
+  fraction2=decimal.Decimal(0.9)
+  Bnumber=b+fraction2
+  op="+"
+  result=BigNumberComputation(Anumber, op, Bnumber)
+  if result >=0:
+    print ("Test Case 5 Passed")
+  else:
+    print ("Test Case 5 Failed")
+testCase5()

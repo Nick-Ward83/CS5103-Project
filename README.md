@@ -2,7 +2,7 @@
 
 Big Number Computation-Nicholas Ward
 
-This project computes problems involving two very large numbers. Current computation features include addition and subtraction, as well as adding commas to the result
+This project computes problems involving two very large numbers. Current computation features include addition and subtraction, as well as adding commas to the result. the program also satisfies the use of handling fractions within the computations
 
 All functions are located within the CS5103.py Python file. The tests cases are located in testCases.py
 Functions include:
@@ -11,6 +11,7 @@ Test Case 1: adds two very large numbers
 Test Case 2: subtracts two very large numbers
 Test Case 3: uses incorrect operand, should throw an error
 Test Case 4: sees if the result of a computation contains commas
+Test Case 5: test case 1 but with the usage of decimals
 
 If not already, the decimal library should be imported
 
